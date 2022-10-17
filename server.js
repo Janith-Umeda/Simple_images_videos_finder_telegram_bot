@@ -2,8 +2,8 @@ var app = require("http");
 const {Telegraf} = require('telegraf');
 const {createClient} = require("pexels");
 var log = "Server Starterd<br>";
-const bot = new Telegraf('1987734218:AAHbYqUZHC6TyQ6BFQUD7yHyDE2J3EezN5g');
-const client = createClient("563492ad6f9170000100000180092ddff19245919524cf1a64cbfa4a");
+const bot = new Telegraf('Your Telegram bot API Key Here');
+const client = createClient("Your Pexels Api Access Key Here");
 
 bot.command("start",ctx=>{
     log += ctx.from.username+" is Started Bot<br>";
